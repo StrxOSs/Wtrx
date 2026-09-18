@@ -1,0 +1,13 @@
+# compiled files
+*.o
+*.bin
+*.efi
+*.img
+
+# logs
+*.log
+
+# directorys
+/bin/
+/obj/
+
