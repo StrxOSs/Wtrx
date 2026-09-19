@@ -32,21 +32,21 @@ static inline void outl(uint16_t port, uint32_t val) {
 /* PART INTPUT: READ */
 
 // read a byte
-static inline uint8_t inb(uint16_t port, val) {
+static inline uint8_t inb(uint16_t port) {
 	uint8_t val;
         __asm__ __volatile__("inb %1, %0" : "=a"(val) : "Nd"(port));
 	return val;
 }
 
 // read a world
-static inline uint16_t inw(uint16_t port, val) {
+static inline uint16_t inw(uint16_t port) {
         uint16_t val;
         __asm__ __volatile__("inw %1, %0" : "=a"(val) : "Nd"(port));
         return val;
 }
 
 // read a dworld
-static inline uint32_t inl(uint16_t port, val) {
+static inline uint32_t inl(uint16_t port) {
         uint32_t val;
         __asm__ __volatile__("inl %1, %0" : "=a"(val) : "Nd"(port));
         return val;
@@ -54,7 +54,7 @@ static inline uint32_t inl(uint16_t port, val) {
 
 /* iowait_function */
 static inline void iowait(void) {
-	outb(0xED,0)
+	outb(0xED,0);
 }
 
 
