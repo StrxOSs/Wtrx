@@ -17,13 +17,13 @@
 #define ICW1_ICW4	0x1
 #define ICW1_SINGLE	0x2
 #define ICW1_INTERVAL4	0x4
-#define ICW_LEVEL	0x08
+#define ICW1_LEVEL	0x08
 #define ICW1_INIT	0x10
 
 #define ICW4_8086	0x01
 #define ICW4_AUTO	0x02
-#define ICW_BUF_SLAVE	0x08
-#define ICW_BUF_MASTER	0x0C
+#define ICW4_BUF_SLAVE	0x08
+#define ICW4_BUF_MASTER	0x0C
 #define ICW4_SFNM	0x10
 
 // cascade irq
@@ -36,3 +36,4 @@ void picdissable(void);
 
 
 #endif /* WTRX_PIC_H */
+
