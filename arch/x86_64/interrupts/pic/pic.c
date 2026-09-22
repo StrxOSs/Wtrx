@@ -1,5 +1,5 @@
 #include "pic.h"
-#include <arch/x86_64/cpu/io.h>
+#include "io.h"
 
 void pic2eoi(uint8_t irq) {
 	if (irq >= 8) {
